@@ -1,0 +1,205 @@
+
+Wed Apr 15 16:32:25 2020
+		-->>> There is an emergency button.
+Wed Apr 15 16:32:53 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 16:32:59 2020
+		-->>> There is an emergency button.
+Wed Apr 15 16:33:32 2020
+		-->>> There is an emergency button.
+Wed Apr 15 16:34:23 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 16:34:09 2020
+		-->>> There is an emergency button.
+Wed Apr 15 16:36:53 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 16:38:35 2020
+		-->>> There is an emergency button.
+Wed Apr 15 16:38:41 2020
+		-->>> There is an emergency button.
+Wed Apr 15 16:38:52 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 16:39:07 2020
+		-->>> There is an emergency button.
+Wed Apr 15 16:39:18 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 17:00:11 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 17:00:25 2020
+		-->>> There is an emergency button.
+Wed Apr 15 17:01:23 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 17:12:11 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 17:12:29 2020
+		-->>> There is an emergency button.
+Wed Apr 15 17:12:40 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 17:14:14 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 17:15:06 2020
+		-->>> There is an emergency button.
+Wed Apr 15 17:15:19 2020
+		-->>> Have been logged in to the system correctly.
+Wed Apr 15 21:33:19 2020
+		-->>> There is an emergency button.
+Wed Apr 15 21:33:39 2020
+		-->>> Have been logged in to the system correctly.
+Thu Apr 16 13:46:03 2020
+		-->>> There is an emergency button.
+Thu Apr 16 13:46:13 2020
+		-->>> Have been logged in to the system correctly.
+Thu Apr 16 15:15:20 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:15:33 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:15:49 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:30:44 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:32:06 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:32:18 2020
+		-->>> Have been logged in to the system correctly.
+Thu Apr 16 15:32:31 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:45:58 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:46:11 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:46:31 2020
+		-->>> Have been logged in to the system correctly.
+Thu Apr 16 15:46:43 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:48:23 2020
+		-->>> There is an emergency button.
+Thu Apr 16 15:48:35 2020
+		-->>> There is an emergency button.
+Thu Jan  1 08:00:02 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:02 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:01 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:01 1970
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:01 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:01 1970
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:01 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:01 1970
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:00 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:00 1970
+		-->>> Sensors (A0) detected.
+Thu Apr 16 17:31:58 2020
+		-->>> There is an emergency button on the web.
+Thu Apr 16 17:31:58 2020
+		-->>> There is an emergency button on the external.
+Thu Apr 16 17:31:58 2020
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:06 1970
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:06 1970
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:06 1970
+		-->>> Sensors (A0) detected.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> Sensors (A0) detected.
+Thu Apr 16 17:44:07 2020
+		-->>> There is an emergency button on the web.
+Thu Jan  1 08:00:02 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Thu Apr 16 18:01:44 2020
+		-->>> There is an emergency button on the web.
+Thu Apr 16 18:03:24 2020
+		-->>> Have been logged in to the system correctly.
+Thu Apr 16 18:03:24 2020
+		-->>> There is an emergency button on the external.
+Thu Jan  1 08:00:06 1970
+		-->>> There is an emergency button on the external.
+Fri Apr 17 13:10:09 2020
+		-->>> There is an emergency button on the web.
+Fri Apr 17 13:10:18 2020
+		-->>> Have been logged in to the system correctly.
+Fri Apr 17 13:13:49 2020
+		-->>> There is an emergency button on the external.
+Fri Apr 17 13:13:54 2020
+		-->>> Sensors detected.
+Fri Apr 17 13:14:07 2020
+		-->>> Have been logged in to the system correctly.
+Fri Apr 17 13:14:23 2020
+		-->>> There is an emergency button on the web.
+Fri Apr 17 13:15:57 2020
+		-->>> There is an emergency button on the external.
+Fri Apr 17 13:16:03 2020
+		-->>> Sensors detected.
+Fri Apr 17 13:16:08 2020
+		-->>> There is an emergency button on the web.
+Fri Apr 17 13:16:20 2020
+		-->>> There is an emergency button on the external.
+Fri Apr 17 13:16:27 2020
+		-->>> Have been logged in to the system correctly.
+Thu Apr 23 20:39:26 2020
+		-->>> There is an emergency button.
+Thu Apr 23 20:39:39 2020
+		-->>> There is an emergency button.
+Thu Apr 23 20:49:23 2020
+		-->>> There is an emergency button on the external.
+Thu Apr 23 20:49:28 2020
+		-->>> There is an emergency button on the external.
+Thu Apr 23 20:50:28 2020
+		-->>> There is an emergency button on the web.
+Thu Apr 23 20:58:08 2020
+		-->>> There is an emergency button on the external.
+Thu Apr 23 21:02:21 2020
+		-->>> There is an emergency button on the external.
+Thu Apr 23 21:03:26 2020
+		-->>> There is an emergency button on the web.
+Mon May  4 00:00:51 2020
+		-->>> Have been logged in to the system correctly.
+Mon May  4 00:01:29 2020
+		-->>> There is an emergency button on the external.
+Mon May  4 00:03:08 2020
+		-->>> Have been logged in to the system correctly.
+Mon May  4 00:05:02 2020
+		-->>> There is an emergency button on the external.
+Mon May  4 00:06:26 2020
+		-->>> There is an emergency button on the web.
+Mon May  4 14:02:17 2020
+		-->>> There is an emergency button on the web.
+Mon May  4 14:02:52 2020
+		-->>> There is an emergency button on the web.
+Mon May  4 14:15:58 2020
+		-->>> There is an emergency button on the web.
+Mon May  4 14:21:55 2020
+		-->>> There is an emergency button on the external.
+Mon May  4 14:25:10 2020
+		-->>> There is an emergency button on the external.
+Mon May  4 15:51:33 2020
+		-->>> Have been logged in to the system correctly.

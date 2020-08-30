@@ -1,0 +1,1246 @@
+<!DOCTYPE HTML>
+<!--
+    Stellar by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+    <title>Fog Protection</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+
+    <noscript>
+        <link rel="stylesheet" href="noscript.css" />
+    </noscript>
+
+
+    <style>
+        .button {
+            display: inline-block;
+            background-color: #008CBA;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            padding: 16px 40px;
+            text-decoration: none;
+            font-size: 30px;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: #f44336;
+        }
+
+        body {
+            background-image: url("885.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-color: #ffffff;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+
+
+
+        .Table_Div {
+            height: 300px;
+            overflow: auto;
+        }
+
+        .User_Table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .User_Table th {
+            text-align: center;
+            color: white;
+            border-right: 5px solid #ccc;
+            background-color: #7eff7e;
+        }
+
+        .User_Table tbody td {
+            border: 1px solid #f1f1f1;
+        }
+    </style>
+    <script>
+        function Dark() {
+            document.body.style.backgroundColor = "#000000";
+            document.body.style.backgroundImage = "url('images/overlay.png'), -moz-linear-gradient(45deg, #000000 30%, #494650 70%)";
+            document.body.style.backgroundImage = "url('images/overlay.png'), -webkit-linear-gradient(45deg, #000000 30%, #494650 70%)";
+            document.body.style.backgroundImage = "url('images/overlay.png'), -ms-linear-gradient(45deg,#000000 30%, #494650 70%";
+            document.body.style.backgroundImage = "url('images/overlay.png'), linear-gradient(45deg, #000000 30%, #494650 70%";
+
+            var ds = document.getElementsByClassName("label");
+
+            ds.style.border = " 2px solid hsla(0, 0, 0, 1); ";
+        }
+
+
+    </script>
+    <script>
+        function Light1234() {
+            document.body.style.backgroundColor = "#935d8c";
+            document.body.style.backgroundImage = "url('images/overlay.png'), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%)";
+            document.body.style.backgroundImage = "url('images/overlay.png'), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%)";
+            document.body.style.backgroundImage = "url('images/overlay.png'), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%)";
+            document.body.style.backgroundImage = "url('images/overlay.png'), linear-gradient(45deg, #e37682 15%, #5f4d93 85%)";
+
+        }
+
+    </script>
+    <script>
+        $(function () {
+            Fixed_Header();
+        });
+
+
+        function Fixed_Header() {
+            $('.User_Table thead').css({ 'position': 'absolute' });
+            $('.User_Table tbody tr:eq("2") td').each(function (index, e) {
+                $('.User_Table thead tr th:eq("' + index + '")').css({ 'width': $(this).outerWidth() + "px" });
+            });
+            var Header_Height = $('.User_Table thead').outerHeight();
+            $('.User_Table thead').css({ 'margin-top': "-" + Header_Height + "px" });
+            $('.User_Table').css({ 'margin-top': Header_Height + "px" });
+        }
+    </script>
+
+
+    <style>
+        <style>section {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        section>div {
+            flex: 1;
+            padding: 1px;
+        }
+
+        input[type="radio"] {
+            display: none;
+
+            &:not(:disabled)~label {
+                cursor: pointer;
+            }
+
+            &:disabled~label {
+                color: hsla(150, 5%, 75%, 1);
+                border-color: hsla(150, 5%, 75%, 1);
+                box-shadow: none;
+                cursor: not-allowed;
+            }
+
+        }
+
+        label {
+            height: 10%;
+            width: 100%;
+            display: block;
+            background: white;
+            border: 2px solid hsla(150, 75%, 50%, 1);
+            border-radius: 20px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            //margin: 1rem;
+            text-align: center;
+            box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+            position: relative;
+        }
+
+        input[type="radio"]:checked+label {
+            background: rgb(230, 230, 250);
+            color: hsla(215, 100%, 100%, 1);
+            box-shadow: 0px 0px 40px hsla(255, 100%, 50%, 0.75);
+
+            &::after {
+                color: hsla(15, 5%, 2%, 1);
+                font-family: FontAwesome;
+                border: 2px solid hsla(150, 75%, 45%, 1);
+                content: "\f00c";
+                font-size: 20px;
+                position: absolute;
+                top: -25px;
+                left: 100%;
+                transform: translateX(-50%);
+                height: 30px;
+                width: 30px;
+                line-height: 30px;
+                text-align: center;
+                border-radius: 50%;
+                background: white;
+                box-shadow: 0px 2px 5px -2px hsla(0, 0%, 0%, 0.25);
+            }
+
+        }
+
+        input[type="radio"]#control_05:checked+label {
+            background: red;
+            border-color: red;
+        }
+
+        #net {
+            text-align: left;
+        }
+
+
+        @media only screen and (max-width: 700px) {
+            section {
+                flex-direction: column;
+            }
+        }
+
+        $color-1: #2ecc71;
+        $color-2: #3498db;
+
+        .custom-radios {
+            div {
+                display: inline-block;
+            }
+
+            input[type="radio"] {
+                display: none;
+
+                +label {
+                    color: #333;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+
+                    span {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        margin: -1px 4px 0 0;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        border-radius: 50%;
+                        border: 2px solid #FFFFFF;
+                        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        text-align: center;
+                        line-height: 44px;
+
+                        img {
+                            opacity: 0;
+                            transition: all .3s ease;
+                        }
+
+                    }
+                }
+
+                &#color-1+label span {
+                    background-color: $color-1;
+                }
+
+                &#color-2+label span {
+                    background-color: $color-2;
+                }
+
+
+
+                &:checked+label span img {
+                    opacity: 1;
+                }
+
+            }
+        }
+
+        .myButton {
+            box-shadow: inset 0px 1px 0px 0px #f5978e;
+            background: linear-gradient(to bottom, #d68883 5%, #ff0000 100%);
+            background-color: #d68883;
+            border-radius: 42px;
+            border: 6px solid #d02718;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            font-weight: bold;
+            padding: 23px 28px;
+            text-decoration: none;
+            text-shadow: 0px 3px 0px #810e05;
+        }
+
+        .myButton:hover {
+            background: linear-gradient(to bottom, #ff0000 5%, #d68883 100%);
+            background-color: #ff0000;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+    </style>
+    <script>
+        setInterval(function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("temperature").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/temperature", true);
+            xhttp.send();
+        }, 10000);
+
+        setInterval(function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("humidity").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/humidity", true);
+            xhttp.send();
+        }, 10000);
+
+        setInterval(function () {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("pressure").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "/pressure", true);
+            xhttp.send();
+        }, 10000);
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(document).on('click', '.add', function () {
+                var html = '';
+                html += '<tr>';
+                html += '<td><input type="text" name="item_name[]" class="form-control item_name" /></td>';
+                html += '<td><input type="text" name="item_quantity[]" class="form-control item_quantity" /></td>';
+                html += '<TD><select name="item_unit[]" class="form-control item_unit"><OPTION value="in">Enable</OPTION><OPTION value="de">Disable</OPTION></TD>';
+                html += '<td><button type="button" name="remove" class="btn btn-danger btn-sm remove"><span class="glyphicon glyphicon-minus"></span></button></td></tr>';
+                $('#item_table').append(html);
+            });
+
+            $(document).on('click', '.remove', function () {
+                $(this).closest('tr').remove();
+            });
+
+            $('#insert_form').on('submit', function (event) {
+                event.preventDefault();
+                var error = '';
+                $('.item_name').each(function () {
+                    var count = 1;
+                    if ($(this).val() == '') {
+                        error += "<p>Enter Item Name at " + count + " Row</p>";
+                        return false;
+                    }
+                    count = count + 1;
+                });
+
+                $('.item_quantity').each(function () {
+                    var count = 1;
+                    if ($(this).val() == '') {
+                        error += "<p>Enter Item Quantity at " + count + " Row</p>";
+                        return false;
+                    }
+                    count = count + 1;
+                });
+
+                $('.item_unit').each(function () {
+                    var count = 1;
+                    if ($(this).val() == '') {
+                        error += "<p>Select Unit at " + count + " Row</p>";
+                        return false;
+                    }
+                    count = count + 1;
+                });
+                var form_data = $(this).serialize();
+                if (error == '') {
+                    $.ajax({
+                        url: "insert.php",
+                        method: "POST",
+                        data: form_data,
+                        success: function (data) {
+                            if (data == 'ok') {
+                                $('#item_table').find("tr:gt(0)").remove();
+                                $('#error').html('<div class="alert alert-success">Item Details Saved</div>');
+                            }
+                        }
+                    });
+                }
+                else {
+                    $('#error').html('<div class="alert alert-danger">' + error + '</div>');
+                }
+            });
+
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(document).on('click', '.add1', function () {
+                var html = '';
+                html += '<tr>';
+                html += '<td><input type="text" name="item_ip[]" class="form-control item_name" /></td>';
+                html += '<td><button type="button" name="remove" class="btn btn-danger btn-sm remove"><span class="glyphicon glyphicon-minus"></span></button></td></tr>';
+                $('#item_table1').append(html);
+            });
+
+            $(document).on('click', '.remove1', function () {
+                $(this).closest('tr').remove();
+            });
+
+            $('#insert_form').on('submit', function (event) {
+                event.preventDefault();
+                var error = '';
+                $('.item_ip').each(function () {
+                    var count = 1;
+                    if ($(this).val() == '') {
+                        error += "<p>Enter Item Name at " + count + " Row</p>";
+                        return false;
+                    }
+                    count = count + 1;
+                });
+
+                var form_data = $(this).serialize();
+                if (error == '') {
+                    $.ajax({
+                        url: "insert.php",
+                        method: "POST",
+                        data: form_data,
+                        success: function (data) {
+                            if (data == 'ok') {
+                                $('#item_table1').find("tr:gt(0)").remove();
+                                $('#error').html('<div class="alert alert-success">Item Details Saved</div>');
+                            }
+                        }
+                    });
+                }
+                else {
+                    $('#error').html('<div class="alert alert-danger">' + error + '</div>');
+                }
+            });
+
+        });
+
+    </script>
+    <script>
+        var gauge = new LinearGauge({
+            renderTo: 'canvas-id',
+            width: 100
+        }).draw();
+
+    </script>
+
+</head>
+
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+
+            <h1>Welcome</h1>
+
+        </header>
+
+        <!-- Nav -->
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Introduction -->
+
+
+            <!-- Introduction -->
+            <section id="intro" class="main">
+                <div class="major">
+                    <div>
+                        <header class="major">
+                            <h2>Status</h2>
+                            <style>
+                                meter,
+                                progress {
+                                    width: 100%;
+                                }
+
+                                .styled progress {
+                                    /* Reset the default appearance */
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    width: 100%;
+                                    height: 30px;
+                                    /* Firefox */
+                                    border: none;
+                                    background: #EEE;
+                                    border-radius: 3px;
+                                    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+                                }
+
+                                .styled progress::-webkit-progress-bar {
+                                    background: #EEE;
+                                    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+                                    border-radius: 3px;
+                                }
+
+                                .styled progress::-webkit-progress-value {
+                                    background-color: #CC0000;
+                                    border-radius: 3px;
+                                }
+
+                                .styled progress::-moz-progress-bar {
+                                    background-color: #CC0000;
+                                    border-radius: 3px;
+                                }
+
+
+
+
+                                .styled meter {
+                                    /* Reset the default appearance */
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    width: 100%;
+                                    height: 30px;
+                                    /* For Firefox */
+                                    background: #EEE;
+                                    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+                                    border-radius: 3px;
+                                }
+
+                                /* WebKit */
+                                .styled meter::-webkit-meter-bar {
+                                    background: #EEE;
+                                    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
+                                    border-radius: 3px;
+                                }
+
+                                .styled meter::-webkit-meter-optimum-value,
+                                .styled meter::-webkit-meter-suboptimum-value,
+                                .styled meter::-webkit-meter-even-less-good-value {
+                                    border-radius: 3px;
+                                }
+
+                                .styled meter::-webkit-meter-optimum-value {
+                                    background: #86CC00;
+                                }
+
+                                .styled meter::-webkit-meter-suboptimum-value {
+                                    background: #FFDB1A;
+                                }
+
+                                .styled meter::-webkit-meter-even-less-good-value {
+                                    background: #CC4600;
+                                }
+
+
+                                /* Firefox */
+                                .styled meter::-moz-meter-bar {
+                                    border-radius: 3px;
+                                }
+
+                                .styled meter:-moz-meter-optimum::-moz-meter-bar {
+                                    background: #86CC00;
+                                }
+
+                                .styled meter:-moz-meter-sub-optimum::-moz-meter-bar {
+                                    background: #FFDB1A;
+                                }
+
+                                .styled meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+                                    background: #CC4600;
+                                }
+
+                                #circle_level {
+                                    width: 25px;
+                                    /* ความกว้าง */
+                                    height: 25px;
+                                    /* ความสูง */
+                                    background: red;
+                                    /* สี */
+                                    -moz-border-radius: 70px;
+                                    -webkit-border-radius: 70px;
+                                    border-radius: 70px;
+                                }
+                            </style>
+                            <form style="text-align: center;"></form>
+                        
+
+                            <table class="table table-bordered" id="item_table">
+                                <tr>
+        
+                                    <td>
+                                        <h5>Reagent level</h5>
+                                    </td>
+                                    <TD>
+                                        <h5>>>> Normal <<<</h5>
+                                    </TD>
+        
+        
+        
+        
+        
+                                </tr>
+                                <tr>
+        
+                                    <td>
+                                        <h5>Button</h5>
+                                    </td>
+                                    <TD>
+                                        <h5>>>> Online <<<</h5>
+                                    </TD>
+        
+        
+        
+        
+        
+                                </tr>
+                                <tr>
+        
+                                    <td>
+                                        <h5>Button Web</h5>
+                                    </td>
+                                    <TD>
+                                        <h5>>>> Online <<<</h5>
+                                    </TD>
+        
+        
+        
+        
+        
+                                </tr>
+        
+        
+                                <tr>
+        
+                                    <td>
+                                        <h5>Sensor 1</h5>
+                                    </td>
+                                    <TD>
+                                        <h5>>>> Online <<<</h5>
+                                    </TD>
+        
+        
+        
+        
+        
+                                </tr>
+        
+                                <tr>
+        
+                                    <td>
+                                        <h5>Sensor 2</h5>
+                                    </td>
+                                    <TD>
+                                        <h5>>>> Offline <<<</h5>
+                                    </TD>
+        
+        
+        
+        
+        
+                                </tr>
+        
+        
+        
+        
+                                </tr>
+        
+                            </table>
+
+
+                            </form>
+
+
+                        </header>
+
+                    </div>
+
+
+                </div>
+            </section>
+
+            <!-- First Section -->
+            <section id="intro" class="main">
+                <div class="major">
+                    <div>
+                        <header class="major">
+                            <h2>Config System</h2>
+                        </header>
+
+                    </div>
+
+                </div>
+                <div>
+
+                    <tr>
+                        <h4>
+                            Set the smoke emission time</h4>
+
+                    <tr>
+                        <table class="table table-bordered" id="item_table">
+                            <tr>
+
+                            <tr>
+                                <TD>
+                                    <select name="item_unit[]" class="form-control item_unit">
+                                        <OPTION value="5s">5 Second</OPTION>
+                                        <OPTION value="10s">10 Second</OPTION>
+                                        <OPTION value="15s">15 Second</OPTION>
+                                        <OPTION value="20s">20 Second</OPTION>
+                                        <OPTION value="25s">25 Second</OPTION>
+                                        <OPTION value="30s">30 Second</OPTION>
+                                        <OPTION value="35s">35 Second</OPTION>
+                                        <OPTION value="40s">40 Second</OPTION>
+                                        <OPTION value="45s">45 Second</OPTION>
+                                        <OPTION value="50s">50 Second</OPTION>
+                                        <OPTION value="55s">55 Second</OPTION>
+                                        <OPTION value="60s">60 Second</OPTION>
+                                </TD>
+
+                            </tr>
+
+                    </tr>
+
+                    </table>
+
+
+
+                </div>
+                <div>
+                    <h4>
+                        Set the timer to start the sensor</h4>
+
+                    <table class="table table-bordered" id="item_table">
+                        <tr>
+                            <th>Hour</th>
+                            <th>Minute</th>
+                            <th>Second</th>
+
+                        <tr>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="Hour_1">1</OPTION>
+                                    <OPTION value="Hour_2">2</OPTION>
+                                    <OPTION value="Hour_3">3</OPTION>
+                                    <OPTION value="Hour_4">4</OPTION>
+                                    <OPTION value="Hour_5">5</OPTION>
+                                    <OPTION value="Hour_6">6</OPTION>
+                                    <OPTION value="Hour_7">7</OPTION>
+                                    <OPTION value="Hour_8">8</OPTION>
+                                    <OPTION value="Hour_9">9</OPTION>
+                                    <OPTION value="Hour_10">10</OPTION>
+                                    <OPTION value="Hour_11">11</OPTION>
+                                    <OPTION value="Hour_12">12</OPTION>
+                            </TD>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="Minute_0">00</OPTION>
+                                    <OPTION value="Minute_1">01</OPTION>
+                                    <OPTION value="Minute_2">02</OPTION>
+                                    <OPTION value="Minute_3">03</OPTION>
+                                    <OPTION value="Minute_4">04</OPTION>
+                                    <OPTION value="Minute_5">05</OPTION>
+                                    <OPTION value="Minute_6">06</OPTION>
+                                    <OPTION value="Minute_7">07</OPTION>
+                                    <OPTION value="Minute_8">08</OPTION>
+                                    <OPTION value="Minute_9">09</OPTION>
+                                    <OPTION value="Minute_10">10</OPTION>
+                                    <OPTION value="Minute_11">11</OPTION>
+                                    <OPTION value="Minute_12">12</OPTION>
+                                    <OPTION value="Minute_13">13</OPTION>
+                                    <OPTION value="Minute_14">14</OPTION>
+                                    <OPTION value="Minute_15">15</OPTION>
+                                    <OPTION value="Minute_16">16</OPTION>
+                                    <OPTION value="Minute_17">17</OPTION>
+                                    <OPTION value="Minute_18">18</OPTION>
+                                    <OPTION value="Minute_19">19</OPTION>
+                                    <OPTION value="Minute_20">20</OPTION>
+                                    <OPTION value="Minute_21">21</OPTION>
+                                    <OPTION value="Minute_22">22</OPTION>
+                                    <OPTION value="Minute_23">23</OPTION>
+                                    <OPTION value="Minute_24">24</OPTION>
+                                    <OPTION value="Minute_25">25</OPTION>
+                                    <OPTION value="Minute_26">26</OPTION>
+                                    <OPTION value="Minute_27">27</OPTION>
+                                    <OPTION value="Minute_28">28</OPTION>
+                                    <OPTION value="Minute_29">29</OPTION>
+                                    <OPTION value="Minute_30">30</OPTION>
+                                    <OPTION value="Minute_31">31</OPTION>
+                                    <OPTION value="Minute_32">32</OPTION>
+                                    <OPTION value="Minute_33">33</OPTION>
+                                    <OPTION value="Minute_34">34</OPTION>
+                                    <OPTION value="Minute_35">35</OPTION>
+                                    <OPTION value="Minute_36">36</OPTION>
+                                    <OPTION value="Minute_37">37</OPTION>
+                                    <OPTION value="Minute_38">38</OPTION>
+                                    <OPTION value="Minute_39">39</OPTION>
+                                    <OPTION value="Minute_40">40</OPTION>
+                                    <OPTION value="Minute_41">41</OPTION>
+                                    <OPTION value="Minute_42">42</OPTION>
+                                    <OPTION value="Minute_43">43</OPTION>
+                                    <OPTION value="Minute_44">44</OPTION>
+                                    <OPTION value="Minute_45">45</OPTION>
+                                    <OPTION value="Minute_46">46</OPTION>
+                                    <OPTION value="Minute_47">47</OPTION>
+                                    <OPTION value="Minute_48">48</OPTION>
+                                    <OPTION value="Minute_49">49</OPTION>
+                                    <OPTION value="Minute_50">50</OPTION>
+                                    <OPTION value="Minute_51">51</OPTION>
+                                    <OPTION value="Minute_52">52</OPTION>
+                                    <OPTION value="Minute_53">53</OPTION>
+                                    <OPTION value="Minute_54">54</OPTION>
+                                    <OPTION value="Minute_55">55</OPTION>
+                                    <OPTION value="Minute_56">56</OPTION>
+                                    <OPTION value="Minute_57">57</OPTION>
+                                    <OPTION value="Minute_58">58</OPTION>
+                                    <OPTION value="Minute_59">59</OPTION>
+
+                            </TD>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="Second_0">00</OPTION>
+                                    <OPTION value="Second_1">01</OPTION>
+                                    <OPTION value="Second_2">02</OPTION>
+                                    <OPTION value="Second_3">03</OPTION>
+                                    <OPTION value="Second_4">04</OPTION>
+                                    <OPTION value="Second_5">05</OPTION>
+                                    <OPTION value="Second_6">06</OPTION>
+                                    <OPTION value="Second_7">07</OPTION>
+                                    <OPTION value="Second_8">08</OPTION>
+                                    <OPTION value="Second_9">09</OPTION>
+                                    <OPTION value="Second_10">10</OPTION>
+                                    <OPTION value="Second_11">11</OPTION>
+                                    <OPTION value="Second_12">12</OPTION>
+                                    <OPTION value="Second_13">13</OPTION>
+                                    <OPTION value="Second_14">14</OPTION>
+                                    <OPTION value="Second_15">15</OPTION>
+                                    <OPTION value="Second_16">16</OPTION>
+                                    <OPTION value="Second_17">17</OPTION>
+                                    <OPTION value="Second_18">18</OPTION>
+                                    <OPTION value="Second_19">19</OPTION>
+                                    <OPTION value="Second_20">20</OPTION>
+                                    <OPTION value="Second_21">21</OPTION>
+                                    <OPTION value="Second_22">22</OPTION>
+                                    <OPTION value="Second_23">23</OPTION>
+                                    <OPTION value="Second_24">24</OPTION>
+                                    <OPTION value="Second_25">25</OPTION>
+                                    <OPTION value="Second_26">26</OPTION>
+                                    <OPTION value="Second_27">27</OPTION>
+                                    <OPTION value="Second_28">28</OPTION>
+                                    <OPTION value="Second_29">29</OPTION>
+                                    <OPTION value="Second_30">30</OPTION>
+                                    <OPTION value="Second_31">31</OPTION>
+                                    <OPTION value="Second_32">32</OPTION>
+                                    <OPTION value="Second_33">33</OPTION>
+                                    <OPTION value="Second_34">34</OPTION>
+                                    <OPTION value="Second_35">35</OPTION>
+                                    <OPTION value="Second_36">36</OPTION>
+                                    <OPTION value="Second_37">37</OPTION>
+                                    <OPTION value="Second_38">38</OPTION>
+                                    <OPTION value="Second_39">39</OPTION>
+                                    <OPTION value="Second_40">40</OPTION>
+                                    <OPTION value="Second_41">41</OPTION>
+                                    <OPTION value="Second_42">42</OPTION>
+                                    <OPTION value="Second_43">43</OPTION>
+                                    <OPTION value="Second_44">44</OPTION>
+                                    <OPTION value="Second_45">45</OPTION>
+                                    <OPTION value="Second_46">46</OPTION>
+                                    <OPTION value="Second_47">47</OPTION>
+                                    <OPTION value="Second_48">48</OPTION>
+                                    <OPTION value="Second_49">49</OPTION>
+                                    <OPTION value="Second_50">50</OPTION>
+                                    <OPTION value="Second_51">51</OPTION>
+                                    <OPTION value="Second_52">52</OPTION>
+                                    <OPTION value="Second_53">53</OPTION>
+                                    <OPTION value="Second_54">54</OPTION>
+                                    <OPTION value="Second_55">55</OPTION>
+                                    <OPTION value="Second_56">56</OPTION>
+                                    <OPTION value="Second_57">57</OPTION>
+                                    <OPTION value="Second_58">58</OPTION>
+                                    <OPTION value="Second_59">59</OPTION>
+                            </TD>
+
+                        </tr>
+
+                        </tr>
+
+                    </table>
+                </div>
+                <div>
+                    <h4>
+                        Set the timer to stop the sensor</h4>
+
+                    <table class="table table-bordered" id="item_table">
+                        <tr>
+                            <th>Hour</th>
+                            <th>Minute</th>
+                            <th>Second</th>
+
+                        <tr>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="Hour_1">1</OPTION>
+                                    <OPTION value="Hour_2">2</OPTION>
+                                    <OPTION value="Hour_3">3</OPTION>
+                                    <OPTION value="Hour_4">4</OPTION>
+                                    <OPTION value="Hour_5">5</OPTION>
+                                    <OPTION value="Hour_6">6</OPTION>
+                                    <OPTION value="Hour_7">7</OPTION>
+                                    <OPTION value="Hour_8">8</OPTION>
+                                    <OPTION value="Hour_9">9</OPTION>
+                                    <OPTION value="Hour_10">10</OPTION>
+                                    <OPTION value="Hour_11">11</OPTION>
+                                    <OPTION value="Hour_12">12</OPTION>
+                            </TD>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="Minute_0">00</OPTION>
+                                    <OPTION value="Minute_1">01</OPTION>
+                                    <OPTION value="Minute_2">02</OPTION>
+                                    <OPTION value="Minute_3">03</OPTION>
+                                    <OPTION value="Minute_4">04</OPTION>
+                                    <OPTION value="Minute_5">05</OPTION>
+                                    <OPTION value="Minute_6">06</OPTION>
+                                    <OPTION value="Minute_7">07</OPTION>
+                                    <OPTION value="Minute_8">08</OPTION>
+                                    <OPTION value="Minute_9">09</OPTION>
+                                    <OPTION value="Minute_10">10</OPTION>
+                                    <OPTION value="Minute_11">11</OPTION>
+                                    <OPTION value="Minute_12">12</OPTION>
+                                    <OPTION value="Minute_13">13</OPTION>
+                                    <OPTION value="Minute_14">14</OPTION>
+                                    <OPTION value="Minute_15">15</OPTION>
+                                    <OPTION value="Minute_16">16</OPTION>
+                                    <OPTION value="Minute_17">17</OPTION>
+                                    <OPTION value="Minute_18">18</OPTION>
+                                    <OPTION value="Minute_19">19</OPTION>
+                                    <OPTION value="Minute_20">20</OPTION>
+                                    <OPTION value="Minute_21">21</OPTION>
+                                    <OPTION value="Minute_22">22</OPTION>
+                                    <OPTION value="Minute_23">23</OPTION>
+                                    <OPTION value="Minute_24">24</OPTION>
+                                    <OPTION value="Minute_25">25</OPTION>
+                                    <OPTION value="Minute_26">26</OPTION>
+                                    <OPTION value="Minute_27">27</OPTION>
+                                    <OPTION value="Minute_28">28</OPTION>
+                                    <OPTION value="Minute_29">29</OPTION>
+                                    <OPTION value="Minute_30">30</OPTION>
+                                    <OPTION value="Minute_31">31</OPTION>
+                                    <OPTION value="Minute_32">32</OPTION>
+                                    <OPTION value="Minute_33">33</OPTION>
+                                    <OPTION value="Minute_34">34</OPTION>
+                                    <OPTION value="Minute_35">35</OPTION>
+                                    <OPTION value="Minute_36">36</OPTION>
+                                    <OPTION value="Minute_37">37</OPTION>
+                                    <OPTION value="Minute_38">38</OPTION>
+                                    <OPTION value="Minute_39">39</OPTION>
+                                    <OPTION value="Minute_40">40</OPTION>
+                                    <OPTION value="Minute_41">41</OPTION>
+                                    <OPTION value="Minute_42">42</OPTION>
+                                    <OPTION value="Minute_43">43</OPTION>
+                                    <OPTION value="Minute_44">44</OPTION>
+                                    <OPTION value="Minute_45">45</OPTION>
+                                    <OPTION value="Minute_46">46</OPTION>
+                                    <OPTION value="Minute_47">47</OPTION>
+                                    <OPTION value="Minute_48">48</OPTION>
+                                    <OPTION value="Minute_49">49</OPTION>
+                                    <OPTION value="Minute_50">50</OPTION>
+                                    <OPTION value="Minute_51">51</OPTION>
+                                    <OPTION value="Minute_52">52</OPTION>
+                                    <OPTION value="Minute_53">53</OPTION>
+                                    <OPTION value="Minute_54">54</OPTION>
+                                    <OPTION value="Minute_55">55</OPTION>
+                                    <OPTION value="Minute_56">56</OPTION>
+                                    <OPTION value="Minute_57">57</OPTION>
+                                    <OPTION value="Minute_58">58</OPTION>
+                                    <OPTION value="Minute_59">59</OPTION>
+
+                            </TD>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="Second_0">00</OPTION>
+                                    <OPTION value="Second_1">01</OPTION>
+                                    <OPTION value="Second_2">02</OPTION>
+                                    <OPTION value="Second_3">03</OPTION>
+                                    <OPTION value="Second_4">04</OPTION>
+                                    <OPTION value="Second_5">05</OPTION>
+                                    <OPTION value="Second_6">06</OPTION>
+                                    <OPTION value="Second_7">07</OPTION>
+                                    <OPTION value="Second_8">08</OPTION>
+                                    <OPTION value="Second_9">09</OPTION>
+                                    <OPTION value="Second_10">10</OPTION>
+                                    <OPTION value="Second_11">11</OPTION>
+                                    <OPTION value="Second_12">12</OPTION>
+                                    <OPTION value="Second_13">13</OPTION>
+                                    <OPTION value="Second_14">14</OPTION>
+                                    <OPTION value="Second_15">15</OPTION>
+                                    <OPTION value="Second_16">16</OPTION>
+                                    <OPTION value="Second_17">17</OPTION>
+                                    <OPTION value="Second_18">18</OPTION>
+                                    <OPTION value="Second_19">19</OPTION>
+                                    <OPTION value="Second_20">20</OPTION>
+                                    <OPTION value="Second_21">21</OPTION>
+                                    <OPTION value="Second_22">22</OPTION>
+                                    <OPTION value="Second_23">23</OPTION>
+                                    <OPTION value="Second_24">24</OPTION>
+                                    <OPTION value="Second_25">25</OPTION>
+                                    <OPTION value="Second_26">26</OPTION>
+                                    <OPTION value="Second_27">27</OPTION>
+                                    <OPTION value="Second_28">28</OPTION>
+                                    <OPTION value="Second_29">29</OPTION>
+                                    <OPTION value="Second_30">30</OPTION>
+                                    <OPTION value="Second_31">31</OPTION>
+                                    <OPTION value="Second_32">32</OPTION>
+                                    <OPTION value="Second_33">33</OPTION>
+                                    <OPTION value="Second_34">34</OPTION>
+                                    <OPTION value="Second_35">35</OPTION>
+                                    <OPTION value="Second_36">36</OPTION>
+                                    <OPTION value="Second_37">37</OPTION>
+                                    <OPTION value="Second_38">38</OPTION>
+                                    <OPTION value="Second_39">39</OPTION>
+                                    <OPTION value="Second_40">40</OPTION>
+                                    <OPTION value="Second_41">41</OPTION>
+                                    <OPTION value="Second_42">42</OPTION>
+                                    <OPTION value="Second_43">43</OPTION>
+                                    <OPTION value="Second_44">44</OPTION>
+                                    <OPTION value="Second_45">45</OPTION>
+                                    <OPTION value="Second_46">46</OPTION>
+                                    <OPTION value="Second_47">47</OPTION>
+                                    <OPTION value="Second_48">48</OPTION>
+                                    <OPTION value="Second_49">49</OPTION>
+                                    <OPTION value="Second_50">50</OPTION>
+                                    <OPTION value="Second_51">51</OPTION>
+                                    <OPTION value="Second_52">52</OPTION>
+                                    <OPTION value="Second_53">53</OPTION>
+                                    <OPTION value="Second_54">54</OPTION>
+                                    <OPTION value="Second_55">55</OPTION>
+                                    <OPTION value="Second_56">56</OPTION>
+                                    <OPTION value="Second_57">57</OPTION>
+                                    <OPTION value="Second_58">58</OPTION>
+                                    <OPTION value="Second_59">59</OPTION>
+                            </TD>
+
+                        </tr>
+
+                        </tr>
+
+                    </table>
+                </div>
+                <div>
+                    <h4>Equipment</h4>
+                    <table class="table table-bordered" id="item_table">
+                        <tr>
+
+                            <th>List</th>
+                            <th>Select</th>
+
+                        <tr>
+
+                            <td>
+                                <h5>Button</h5>
+                            </td>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="in">Enable</OPTION>
+                                    <OPTION value="de">Disable</OPTION>
+                            </TD>
+
+
+
+
+
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <h5>Button Web</h5>
+                            </td>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="in">Enable</OPTION>
+                                    <OPTION value="de">Disable</OPTION>
+                            </TD>
+
+
+
+
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <h5>Sensor 1</h5>
+                            </td>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="in">Enable</OPTION>
+                                    <OPTION value="de">Disable</OPTION>
+                            </TD>
+
+
+
+
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <h5>Sensor 2</h5>
+                            </td>
+                            <TD>
+                                <select name="item_unit[]" class="form-control item_unit">
+                                    <OPTION value="in">Enable</OPTION>
+                                    <OPTION value="de">Disable</OPTION>
+                            </TD>
+
+
+
+
+
+                        </tr>
+
+
+
+
+                        </tr>
+
+                    </table>
+
+
+
+                </div>
+
+                <div>
+                    <h4>Theme</h4>
+                    <div class="custom-radios">
+                        <div>
+                            <input type="radio" id="color-1" name="color" value="color-1" checked onclick='Light1234()'>
+                            <label for="color-1">
+                                <span>
+                                    Light
+                                </span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="color-2" name="color" value="color-2" onclick='Dark()'>
+                            <label for="color-2">
+                                <span>
+                                    Drak
+                                </span>
+                            </label>
+                        </div>
+
+                    </div>
+
+            </section>
+
+            <!-- Second Section -->
+
+            <section id="intro" class="main">
+                <div class="major">
+                    <div>
+                        <header class="major">
+                            <h2>User</h2>
+                        </header>
+
+                    </div>
+
+                    <form>
+                        Old Password <input type="text" name="OldPassword"><br>
+                        New Password <input type="text" name="NewPassword"><br>
+                        Re Password <input type="text" name="RePassword"><br>
+                    </form>
+
+                </div>
+            </section>
+            <!-- Second Section -->
+
+            <section id="intro" class="main">
+                <div class="major">
+                    <div>
+                        <header class="major">
+                            <h2>System</h2>
+                        </header>
+
+                    </div>
+
+                    <form style="text-align: center;">
+                        <input type="button" value="Reboot"> <br><br>
+                        <input type="button" value="Save Config"><br><br>
+                        <input type="button" value="Save and Reboot"><br>
+                    </form>
+
+                </div>
+            </section>
+
+            <!-- Second Section -->
+
+            <section id="intro" class="main">
+                <div class="major">
+                    <div>
+                        <header class="major">
+                            <h2>Log</h2>
+                        </header>
+
+                    </div>
+
+                    <section class="text-center">
+
+                        <iframe src="test.txt" width=80% height=290 frameborder=0></iframe>
+
+                        <br><br>
+                        <form style="text-align: center;">
+                            <input type="button" value="Clear"> &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input type="button" value="Export">
+
+                        </form>
+                    </section>
+
+
+
+
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+            </footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="jquery.js"></script>
+        <script src="jquery.scrollex.js"></script>
+        <script src="jquery.scrolly.js"></script>
+        <script src="browser.js"></script>
+        <script src="breakpoints.js"></script>
+        <script src="util.js"></script>
+        <script src="main.js"></script>
+        <script>
+
+
+
+
+        </script>
+
+</body>
+
+</html>
